@@ -27,6 +27,10 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/test', function(req, res) {
+  res.status(2000).send('I turned myself into a pickle Morty!')
+})
+
 app.post('/signup', function(req, res) {
   var data = JSON.stringify(req.body)
   console.log(data)
